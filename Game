@@ -1,7 +1,6 @@
 Damage.FriendlyFire = true;
 BreackGraph.BreackAll = false;
-
-        Teams.Get("Игроки").Spawns.SpawnPointsGroups.Add(2);
+ Teams.Get("Игроки").Spawns.SpawnPointsGroups.Add(2);
 players = GameMode.Parameters.GetBool("Players");
 
 room.Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
