@@ -1,14 +1,2 @@
-Damage.FriendlyFire = true;
-BreackGraph.BreackAll = false;
 
- Teams.Get("Игроки").Spawns.SpawnPointsGroups.Add(2);
-players = GameMode.Parameters.GetBool("Players");
-
-room.Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
-room.Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); })
-
-room.Spawns.GetContext().RespawnTime.Value = 999999;
-room.Damage.OnDeath.Add(function (player) {
-    player.Spawns.Spawn();
-});
 
